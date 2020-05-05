@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo "Deploying release ${RELEASE} with log level ${LOG_LEVEL}..."
+                echo "Deploying release ${RELEASE}."
             }
         }        
     }
