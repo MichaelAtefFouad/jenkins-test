@@ -10,10 +10,10 @@ pipeline {
             }
             steps {
                echo "Building release ${RELEASE} with log level ${LOG_LEVEL}..."
-               sh 'chmod +x m2/demo3/build.sh'
-               withCredentials([string(credentialsId: 'an-api-key', variable: 'API_KEY')]) {
+               sh 'chmod +x helpers/m2/demo3/build.sh'
+               withCredentials([string(credentialsId: '	6723aa15-2afb-4b3a-9541-7e9cf3f1257c', variable: 'API_KEY')]) {
                   sh '''
-                     ./m2/demo3/build.sh
+                     ./helpers/m2/demo3/build.sh
                   '''
                }
             }
