@@ -13,7 +13,7 @@ pipeline {
                sh 'chmod +x helpers/m2/demo3/build.sh'
                withCredentials([string(credentialsId: '6723aa15-2afb-4b3a-9541-7e9cf3f1257c', variable: 'API_KEY')]) {
                   sh '''
-                     .helpers//m2/demo3/build.sh
+                     ./helpers//m2/demo3/build.sh
                   '''
                }
             }
